@@ -1,0 +1,105 @@
+
+.Proyecto .Texto{
+text-align: center;
+bottom: 0;
+
+width: 100%;
+}
+
+
+.main{
+
+	margin: auto;
+	width: 70%;	
+	height: 60%;
+
+}
+
+#tipo1,#tipo2,#tipo3,#tipo4,#tipo5{
+
+	width: 18%;
+	float: left;
+	margin: 0px 0px 10px 10px;
+
+
+}
+.tipo1 p ,.tipo2 p ,.tipo3 p,.tipo4 p ,.tipo5 p {
+
+	font-size: 15px;
+	margin-top: 0.5px;
+	
+
+}
+.examples
+{
+	width: 100%;
+	position: relative;
+
+}
+
+
+
+h1{text-align: center;}
+
+p,h1{
+color: white;
+
+}
+
+.Proyecto {
+border:  3px solid rgba(255,255,255,0.3);
+cursor: pointer;
+
+}
+
+
+.Proyecto img{
+width: 100%;
+min-height: 250px;
+max-height:250px;
+opacity: 0.8;
+
+}
+.container1 {
+  display: table-cell;
+ max-height: 200px;
+  width: 10%;
+}
+
+.examples{
+ 
+  width: 99%;
+  margin: auto;
+}
+#tipo1 , #tipo2,#tipo3,#tipo4,#tipo5{ padding: 5px 5px; }
+
+.Proyecto .Texto h2{
+color: white;
+position: relative;
+margin-top: -46px;
+padding: 10px 0px;
+font-size: 20px;
+background: rgba(0,0,0,0.3);
+}
+.Color{
+color: white;
+
+}
+p,h1{
+color: white;
+
+}
+
+
+h5{color: white;width: 20%;float: left;text-align:center;opacity: 0.8}
+/*
+#tipo2 img{border:  9px solid rgba(54,33,245,0.6)}
+#tipo3 img{border:  9px solid rgba(255,255,255,0.8)}
+#tipo4 img{border:  9px solid rgba(153,217,234,0.8);}
+#tipo5 img{border:  9px solid rgba(85,230,49,0.8)}*/
+
+     
+@media screen and (max-width: 900px){
+.proyecto img{max-height: 100px;}
+}
+

@@ -1,0 +1,219 @@
+/*Proyectos activos*/
+.color,#scale-demom,a{	background: rgba(111,202,225);}
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#cancelar,#guardar{
+width:49%;
+
+	
+}
+body{
+
+	height:180%; 
+	
+}
+html{
+
+
+background: #e2e9f4;
+}
+
+#scale-demo{
+
+	right:-95%;
+	top: 50px;	
+
+}
+.ocultar{
+
+opacity: 0.0;
+
+}
+h3{
+text-align:center;
+opacity: 0.6;
+
+}
+#imagenprincipal{
+max-width: 60px;
+min-height: 60px;
+left: 10px;	
+top: 10px;
+position: absolute;
+opacity: 0.8;
+}
+
+.botones
+{
+	-webkit-app-region:no-drag;
+	margin-left:  95%;
+	position: relative;
+	background-image:white;
+	
+}
+.botones img
+{
+	width: 25px; 
+	height: 25px;
+}
+.card-title p{
+	width: 200px; 
+	color:red;
+}
+.ajustar
+{
+background: red;
+width: 80px;
+position: relative;
+margin-right: 50px;
+}
+#VentanaActual
+{
+background: rgba(255,255,255,0.2);
+}
+.card-title p{	color:red; }
+#boton{
+
+	opacity: 0.8;
+}
+#boton:hover{
+
+	background: white;
+	color: black;
+}
+#card{
+
+		border: 50px solid red;
+}
+.nav-wrapper{margin-top: -20px;}
+#menu{display: none;}
+#dropdown1{min-width: 220px;}
+.ImagenCabezera{max-width: 100%;}
+#ProyectosActivos #tipo2 .card-content{background: rgba(153,217,234,0.5);}
+#ProyectosActivos #tipo3 .card-content{background: rgba(136,251,182,0.5);}
+#ProyectosActivos #tipo4 .card-content{background: rgba(166,132,255,0.5);}
+#ProyectosActivos #tipo5 .card-content{background: rgba(245,141,181,0.5);}
+ #notificaciones{
+
+ }
+
+ #aqui{
+opacity: 0.8;
+ 	display: block;
+ 	text-decoration: none;
+ 	color: white;
+ 	max-width: 80px;
+ 	height: 80px;
+ 	text-align:center;
+ 	position: relative;
+ 	font-size: 30px;
+ 	border-radius: 40px;
+ }
+ #aqui i{ margin-top: 30px; }
+  #aqui { margin-top: 300px; }
+#Retrasados  i{	}
+.sidenav li div	{float:left;}
+#Proximos  i{background: yellow;
+color: black;	}
+.Proyecto{max-width: 120%;}
+.card-image img{max-height: 190px;min-height: 190px;}
+
+
+.notificaion{
+
+margin-top:200px;
+}	
+@media screen and (max-width: 600px){
+.ImagenCabezera{display: none;}
+.botones img
+{
+display: none;
+}
+
+
+}
+@media screen and (max-width: 1100px){
+
+.esconder{display: none;}
+#menu{display: block;}
+}
+@media screen and (max-width :1700px){
+.botones
+{
+	margin-left:  92%;
+	
+
+}
+}
+
+@media screen and (max-width :1060px){
+.botones
+{
+	margin-left:  90%;
+	
+
+}
+}
+
+@media screen and (max-width :870px){
+.botones
+{
+	margin-left:  85%;
+	
+
+}
+}
+
+@media screen and (max-width :580px){
+.botones
+{
+	margin-left:  80%;
+	
+
+}
+}
+
+
+@media screen and (max-width :480px){
+.botones
+{
+	margin-left:  71%;
+	
+
+}
+}
+
+@media screen and (max-width :380px){
+.botones
+{
+	margin-left:  60%;
+	
+
+}
+}
+
+@media screen and (max-width :200px){
+.botones
+{
+	display: none;
+	
+
+}
+}
+
+@media screen and (max-width :950px){
+#boton
+{
+	font-size: 20px;
+
+}
+}

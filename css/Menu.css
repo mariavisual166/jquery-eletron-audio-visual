@@ -1,0 +1,143 @@
+
+.Contenedor{
+	margin: auto;
+}
+.main{
+	margin: 30px auto;
+	width: 75%;
+	min-width: 600px;
+	height: 75%;
+	position: relative;
+	font-size: 25px;
+	
+
+}
+
+
+.main .Boton1{
+	background: rgba(127,127,127,0.4);
+	width: 49%;
+	height: 100%;
+	float: left;
+	margin: 0% 0% 1% 1%;
+	float: left;
+	
+}
+
+.main .Boton{
+	background: rgba(127,127,127,0.4);
+	width: 48%;
+	height: 49.4%;
+	float: left;
+	margin: 0% 0% 6px 1%;
+	float: left;
+}
+
+.Boton1{
+display:flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+	
+	
+}
+.Boton{
+display:flex;
+justify-content: center;
+align-content: center;
+align-items: center;
+	
+	
+}
+ .contenido img{
+margin:0px auto; 
+display: block;
+	
+	
+}
+ .contenido img{
+margin:0px auto; 
+display: block;
+	
+	
+}
+.contenedor{
+width: 100%;
+height: 130px;
+text-align:center;
+
+	
+}
+.contenedor2{
+width: 100%;
+height: 85px;
+text-align:center;
+
+	
+}
+.contenedor img,.contenedor2 img{
+	display: block;
+	margin: 0px auto 0px;	
+	
+}
+.main .Boton1 img{
+	
+	width:100px; 
+	height:100px;
+}
+
+.main .Boton img{
+	 
+	width:60px; 
+	height:60px;
+}
+
+
+
+.main .Boton1 a {
+	padding: 61% 50% 39% 50%;
+
+	
+}
+.main .Boton a {
+	padding: 38% 49% 18% 49%;
+	
+	
+
+}
+.Boton1:hover,.Boton:hover{
+	
+	background:rgba(255,255, 255,0.7);
+	color:black;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	
+}
+
+@media screen and (max-width: 1000px){
+.main .Boton1 img{
+	width:80px; 
+	height:80px;
+}
+.main .Boton img{
+	width:60px; 
+	height:60px;
+}
+}
+@media screen and (max-height:  500px){
+.main .Boton1{
+	background: rgba(127,127,127,0.4);
+	width: 49%;
+	height: 90%;
+}
+
+.main .Boton{
+	background: rgba(127,127,127,0.4);
+	width: 48%;
+	height: 44%;
+}
+}
+

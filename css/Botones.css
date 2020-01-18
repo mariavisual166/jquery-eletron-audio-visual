@@ -1,0 +1,11 @@
+/*Efectos de Boton*/
+header a:hover,.mas a:hover,.Boton1:hover,.Boton2:hover,.BotonGrande:hover,.menu a:hover,header .menu a:hover,.Navegacion a:hover,.wrap a:hover{
+	background:rgba(255,255, 255,1);
+	color:black;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+

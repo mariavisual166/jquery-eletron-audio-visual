@@ -1,0 +1,32 @@
+header .Usuario{float: left;}
+
+header .menu img{
+	width: 30px;
+	height: 30px;
+}
+
+header {color: white;}
+header .menu {
+	margin: 4% 0% 5% 85%;
+	position: relative;
+}
+
+.botones img{position: relative;}
+
+.main{
+	position: relative;
+	margin: auto;
+}
+
+.con{
+	position: relative;
+	width: 70%;
+	margin: 10px auto;
+}
+
+
+
+
+
+
+

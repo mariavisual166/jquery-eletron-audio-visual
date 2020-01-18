@@ -1,0 +1,298 @@
+
+
+
+*{
+	padding:0px;
+	margin:0px;
+	
+}
+#particles-js {
+	width:100%;
+	height:100%;
+	position:fixed;
+	
+}
+header{
+
+	width: 90%;
+	margin: auto;
+}
+header img{
+	
+	width: 60px;
+	height: 60px;
+
+
+}
+header .Usuario{
+
+float: left;
+
+}
+
+header .menu img{
+	
+	width: 30px;
+	height: 30px;
+
+}
+header .menu {
+	
+	margin: 4% 0% 5% 85%;
+	
+
+}
+.main img ,.main a {
+	
+	margin: 0% auto;
+	display: block;
+	text-align: center;
+}
+header .Menu a{
+	text-align: center;
+	
+	padding: 5px 5px;
+	border: 2px solid white;
+	width: 180px;
+	border-radius: 15px;
+	text-decoration: none;
+	color: black;
+	margin: 10px 0px 0px 0px;	
+	color: white;
+	
+}
+
+.botones
+{
+
+	margin: -3% 0% 0% 85%;
+	background-image:white;
+	position: absolute;
+	min-width: 20px;
+	min-height: 20px;
+	
+}
+.botones img
+{
+	width: 25px; 
+	height: 25px;
+}
+
+body{
+color: white;
+		font-family: 'arial';
+	background-image: linear-gradient(to right top, #242427, #1d1d21, #16171c, #0f0f17, #030311);
+	position: relative
+}
+
+.centrar
+{
+	width: 80%;
+	margin: auto;	
+
+}
+#Boton a{
+margin: auto;
+border: 2px solid white;
+width: 30%;
+text-align: center;
+padding: 0px 10px;
+text-decoration: none;
+display: block;
+}
+
+.Contenedor{
+	margin: auto;
+	height: 1000px;
+
+}
+.main{
+	margin: auto;
+	width: 30%;
+	
+	min-width: 400px;
+	height: 55%;
+	border: 2px solid rgba(255,255,255,0.4);
+}
+
+
+.main p{
+	margin:1px 0px 0px 45px;
+
+
+}
+.main input,.main select
+{
+	margin:10px 10px 0px 10px;
+	width: 80%;
+	margin:auto;
+	display: block;
+
+
+}
+
+.main a{
+	display: block;
+	margin:10px 50px;
+	color: white;
+
+
+}
+.Contenedor {
+	margin:5% 0%;
+
+
+}
+.Boton {
+	margin:0% 0% 0% 70%;
+}
+.Editar {
+	margin:0% 0% 10% 50%;
+	padding: 5px 0px;
+}
+.main .imagen img{
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+
+	
+}
+header a:hover,.mas a:hover,.Boton1:hover,.Boton2:hover,.BotonGrande:hover,.menu a:hover,#Boton a:hover{
+	background:rgba(255,255, 255,1);
+	color:black;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+
+	
+}
+
+.main .mas a{
+	text-align: center;
+	padding: 0px 10px;
+	border: 2px solid white;
+	width: 40%;
+
+	text-decoration: none;	
+	margin: 10px 0 0 20px;
+	text-align: center;
+	float: left;
+	display: block;
+}
+
+textarea 
+{
+	margin: 10px 0px 0px 50px;
+	
+}
+
+@media screen and (max-height : 800px){
+header .Menu {margin: 4% 0% 5% 45%;}
+.main{
+	
+	margin: auto;
+	width: 30%;
+	min-width: 400px;
+	height: 45%;
+	border: 2px solid rgba(255,255,255,0.4);
+}
+.main .imagen img{
+	width: 60px;
+	height: 60px;
+	
+}
+.main .mas a,.main .eliminar a{
+	text-align: center;
+	padding: 0px 10px;
+	border: 2px solid white;
+	width: 40%;
+	
+	text-decoration: none;	
+	margin: 0px 0 0 12px;
+	text-align: center;
+	display: block;
+}
+.main p{
+
+	margin-top: -10px;
+}
+
+}
+.main .Ajustar input
+{
+	width: 51%;
+	
+}
+
+
+@media screen and (max-height : 500px){
+header .Menu {margin: 4% 0% 5% 45%;}
+.main{
+
+	margin: auto;
+	width: 50%;
+	min-width: 400px;
+	height: 40%;
+
+	
+}
+.main .imagen img{
+	width: 60px;
+	height: 60px;
+	
+}
+.main .mas a,.main .eliminar a{
+	text-align: center;
+	padding: 0px 10px;
+	border: 2px solid white;
+	width: 40%;
+
+	
+	text-decoration: none;	
+	margin: 0px 0 0 12px;
+	text-align: center;
+	display: block;
+}
+.main p{
+
+	margin-top: -10px;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 950px){
+
+.main{
+
+}
+header .Menu a {margin: 4% 0% 5% -250%;}
+.botones
+{
+
+	margin: -3% 0% 0% 85%;
+	background-image:white;
+	position: absolute;
+	min-width: 20px;
+	min-height: 20px;
+	
+}
+	
+
+
+}
+
+@media screen and (max-width: 900px){
+
+
+.botones
+{
+	margin: -3% 0% 0% 80%;
+}
+}
+
+

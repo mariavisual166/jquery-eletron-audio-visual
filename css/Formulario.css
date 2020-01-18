@@ -1,0 +1,173 @@
+.container{
+	position: relative;
+ 	border:  1px solid rgba(255,255,255,0.2); 
+
+}
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 30vh; /* These two lines are counted as one 🙂       */
+  display: flex;
+  align-items: center;
+}
+.imagen img{
+	width: 180px;
+	height: 180px;
+	border-radius: 90px;
+	margin-bottom: 10px;
+	margin: auto;
+	display: block;
+}
+#archivos li{
+	color: black;
+
+}
+
+#checkbox
+{
+
+margin-top: 10px;
+
+}
+li{
+	list-style: none;
+margin-top: -5px;
+	color:black;
+}
+ul{
+
+	color:black;
+
+}
+#colaboradores input,#colaboradores select{
+
+margin-top: 3px;
+margin-bottom: 3px;
+
+}
+.imagen {
+	width: 100%;	
+}
+.container a{
+
+color: white;
+display: block;
+margin: auto;
+margin-top: 2px;	
+}
+#Pri{
+	margin-bottom: 15px;
+	
+}
+#Proyecto {
+
+
+padding: 0px 20px;
+
+
+}
+input,select
+{
+	margin-top:-5px;
+	
+}
+.form-group
+{
+	margin-top:-10px;
+	
+}
+button
+{
+	box-shadow: 2px 1px 2px 1px white;
+	margin: auto;
+	margin-bottom: 5px;
+	border-radius:10px;
+	background: red;
+
+	
+}
+#anotacion,#textoanotacion
+{
+	text-align:center;
+	width: 90%;
+	height: 100%;
+	margin: auto;
+	color: black;
+	min-height: 800px;
+}
+#text{
+	
+	width: 100%;
+
+}
+#Proyectos{
+color: black;
+
+}
+#guardaranotacion{
+
+	display: block;
+
+}
+#Ajustar{margin-top:10px;}
+
+h5{
+color: black;
+text-align: center;
+}
+
+.Centar {margin: auto;	width:150px;}
+h4{
+color: white;
+text-align:center;
+margin-bottom: -5px;
+} 
+
+.Boton 
+{	display: block;
+	margin: 10px 0px 0px 91%;
+	width: 20%;
+	opacity: 0.5;
+}
+li{
+	color: white;
+}
+.imagen{margin-top: -10px;
+}
+.Boton  :hover {text-decoration: none;
+opacity: 1;
+ }
+#ajus img{border-radius: 100px;}
+span{margin-top: 80px;}
+#ajus {margin: auto;}
+
+@media screen and (max-width: 580px){
+#quitar{
+display:none;
+}
+}
+@media screen and (max-width: 1000px){
+
+
+.nav  {
+margin-right: 45px;
+font-size: 12px;
+			
+}
+
+
+#Anotaciones,#anotacion,#textoanotacion
+{
+	display: none;
+}
+h4{
+	display: none;
+}
+
+.Centar{
+
+	display: none;
+}
+
+
+}
+

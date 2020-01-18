@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset='UTF-8'>
+    <title> Pagina Web 3.0</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/Formularios.css">
+    <link rel="stylesheet" href="../css/icon.css">
+  </head>
+  <body>
+  <header>
+<div class="row ">
+<div class="botones"> 
+      <img src="../image/descarga2.PNG" id="minimizar">
+      <img src="../image/descarga1.PNG" id="fullscreen">
+      <img src="../image/descarga.PNG"  id="cerrar">
+  </div>
+</div>
+
+
+    
+  <nav>
+    <div class="nav-wrapper teal darken-1">
+      <div id="imagenprincipal">
+        <img src="../image/2.jpg" alt="" class="circle responsive-img">
+
+      </div>
+      <ul id="nav-mobile" class="right">
+       <li><a href="../View/login.html" class="esconder" >Cerrar seccion</a></li>
+        <li><a href="../View/VentanaColaboradores.html" class="esconder">Colaboradores</a></li>
+        <li><a href="../View/VentanaCrearColaborador.html" class="esconder" > Crear Colaborador</a></li>
+          <li><a href="../View/Configuracion.html" class="esconder">Configuracion</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" id="VentanaActual" >Proyectos</a></li>
+      </ul>
+    </div>
+  </nav> 
+  </header>
+   
+  <div class="row " id="Formulario">
+    <div class="col l4 m3 s3"></div>
+    <div class="col l4 m6 s6 z-depth-5" class=""> 
+    <div class='imagen'>
+	   <div class="carousel">
+	    <a class="carousel-item" href="#one!"> <img id="imagen" src="../image/1.jpg"></a>
+	    <a class="carousel-item" href="#two!"> <img id="imagen" src="../image/2.jpg"></a>
+	    <a class="carousel-item" href="#three!"> <img id="imagen" src="../image/4.jpg"></a>
+	
+	  </div>
+      <a class="waves-effect waves-light btn modal-trigger" id='Editar' href="#modal1">Editar Foto</a>
+
+        </div> 
+         
+      <form  >
+       <div class="input-field ">
+            <input id="Nombre" type="text" data-length="30" maxlength="30">
+            <label id="labelNombre" for="input_text">Nombre</label>
+          </div>
+       <div class="input-field ">
+            <input id="Descripcion" type="text" >
+            <label id="labelDescripcion" for="input_text">Descripcion</label>
+          </div>
+           <label for="input_text" id="labelFecha" >Fecha de entrega</label>
+           <div class="input-field ">
+
+          <input id="Fecha" type="date" class="validate">
+          
+        </div>
+        <div class="input-field ">
+          <input id="Estado" type="text" class="validate">
+          <label for="last_name" id="labelEstado">Estado</label>
+        </div>
+        	 <div id="checkbox" >
+			    		   <p>
+			      <label>
+			        <input type="checkbox">
+			        <span>Finalizado</span>
+			      </label>
+			    </p>
+  			</div>
+       </form>
+       <div class="Boton">
+       <a class="waves-effect waves-light btn" id='guardar_proyecto' >Guardar</a>
+       <a class="waves-effect waves-light btn" id='eliminar_proyecto'>Eliminar</a>
+       <a class="waves-effect waves-light btn modal-trigger"  href="#Archivo" id='archivo'>Archivos</a>
+       <a class="waves-effect waves-light btn modal-trigger"  href="#Imagenes" id='imagenes'>Imagenes</a>
+     	 <a class="waves-effect waves-light btn modal-trigger"  href="#Cola" id='Colaboradores'>Colaboradores</a>
+
+     	</div>
+     </div>
+   <div class="col l4 m3 s3">
+   <a class="waves-effect waves-light btn" id='guardaranotacion' >Guardar Anotacion</a>
+     <textarea id='textoanotacion'>
+      
+     </textarea>
+   </div>
+
+
+     </div>
+
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+<div class="modal-content">
+ <div class='imagen'>
+            <img id="imagen" src="../image/1.jpg">
+
+        </div> 
+  <form action="#">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+  </form>
+        
+</div>
+</div>
+<div id="Archivo"class="modal">
+<div class="modal-content">
+  <form action="#">
+    <div class="file-field input-field">
+      <h5 class="modal-title" id="exampleModalCenterTitle">Archivos</h5>
+        <ul class="list-group" id="archivos">
+	  </ul>
+    </div>
+  </form>
+        
+</div>
+</div>
+<div id="Cola"class="modal">
+<div class="modal-content">
+  <form action="#">
+    <div class="file-field input-field">
+      <h5 class="modal-title" id="exampleModalCenterTitle">Colaboradores</h5>
+        <ul class="list-group" id="colaboradores">	
+		  </ul>
+    </div>
+  </form>
+        
+</div>
+</div>
+<div id="Imagenes"class="modal">
+<div class="modal-content">
+ <div class='imagen'>
+            <img id="imagen" src="../image/1.jpg">
+
+        </div> 
+  <form action="#">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+  </form>
+        
+</div>
+</div>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/jquery-latest.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/iziToast.min.js"></script>
+    <script src="../js/ventanaProyecto.js"></script>
+
+        
+
+
+  <ul id="dropdown1" class="dropdown-content">
+      
+        <li><a href="../View/ProyectosFinalizados.html" >finalizados</a></li>
+         <li><a href="../index.html" > Activos</a></li>
+         <li><a href="../View/VentanaNuevoProyecto.html" >Crear Proyecto</a></li>
+        
+</ul>    
+<script>
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+
+  $(document).ready(function() {
+    $('input#input_text, textarea#textarea2').characterCounter();
+  });
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+  $(".dropdown-trigger").dropdown();
+</script>
+<script >
+            
+  ipcRenderer = require('electron').ipcRenderer
+
+document.getElementById('minimizar').addEventListener("click", function(){ ipcRenderer.send('minimizar'); })
+document.getElementById('fullscreen').addEventListener("click", function(){ ipcRenderer.send('fullscreen'); })
+document.getElementById('cerrar').addEventListener("click", function(){ ipcRenderer.send('cerrar'); })
+    </script>
+  </body>
+
+</html>

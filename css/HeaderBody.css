@@ -1,0 +1,169 @@
+#particles-js {
+	width:100%;
+	height:100%;
+	position:fixed;
+	opacity: 0.5;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	color: white;
+	font-family: 'arial';
+background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72,
+#a8eb12);
+	background-size: cover;
+	background-attachment:fixed;
+
+}
+.wrap{
+	width: 90%;
+	margin: auto;
+
+	
+}
+.ImagenUsuario
+{
+	text-align:center;
+	
+}
+header .wrap{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0px;
+
+}
+*{
+	padding:0px;
+	margin:0px;
+}
+header{
+	position: relative;
+	width: 90%;
+	margin: auto;
+	height: 100px;
+-webkit-app-region:drag;
+}
+header img{
+	
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+
+}
+header .Usuario{
+
+float: left;
+
+}
+
+header .menu img{
+		
+	width: 30px;
+	height: 30px;
+
+}
+
+.botones
+{
+	-webkit-app-region:no-drag;
+	margin-left:  95%;
+	position: relative;
+	background-image:white;
+	
+}
+.botones img
+{
+	width: 25px; 
+	height: 25px;
+}
+
+.wrap a{
+ 	border-bottom: 1px solid rgba(255,255,255,0.5); 
+ 	border-radius: 2px;
+ 	display: block;
+ 	color: white;
+ 	padding: 5px 5px;
+ 	text-decoration: none;
+}
+#ajustar{ padding: 7px 4px;}
+#ajus {max-width:200px;max-height:400px;}
+/*quitar
+.vertical-center{height: 700px;}
+@media screen and (max-height : 800px){.vertical-center{height: 800px;}}*/
+@media screen and (max-width :1700px){
+.botones
+{
+	margin-left:  92%;
+	
+
+}
+}
+
+@media screen and (max-width :1060px){
+.botones
+{
+	margin-left:  90%;
+	
+
+}
+}
+
+@media screen and (max-width :870px){
+.botones
+{
+	margin-left:  85%;
+	
+
+}
+}
+
+@media screen and (max-width :580px){
+.botones
+{
+	margin-left:  80%;
+	
+
+}
+}
+
+
+@media screen and (max-width :480px){
+.botones
+{
+	margin-left:  71%;
+	
+
+}
+}
+
+@media screen and (max-width :380px){
+.botones
+{
+	margin-left:  60%;
+	
+
+}
+}
+
+@media screen and (max-width :200px){
+.botones
+{
+	display: none;
+	
+
+}
+}
+
+@media screen and (max-width :950px){
+#boton
+{
+	font-size: 20px;
+
+}
+}

@@ -1,0 +1,60 @@
+
+.Contenedor{margin: auto;}
+.main{
+	margin: auto;
+	width: 80%;
+
+
+}
+#buscar{margin-right: 50px;
+
+}
+.Navegacion a,select{
+	text-align: center;
+	display: block;
+	float: left;
+
+}
+select,input,.Navegacion a{ max-width: 33%; margin-right: 3px;}
+.main h1{text-align: center;}
+.main .colarborador img{
+	width: 100%;
+	height: 200px;
+	margin:auto;
+	display: block;
+	border-radius: 5px;
+	opacity: 0.9;
+	border: 5px solid rgba(255,255,255,0.5)
+
+	
+}
+#tipo1{border: 5px solid rgba(54,33,245,0.8) }
+#tipo2{ border: 5px solid rgba(255,255,255,0.8) }
+#tipo3{ border: 5px solid rgba(153,217,234,0.8) }
+#tipo4{ border: 5px solid rgba(85,230,49,0.8)  ;z-index: 5;}
+.main .colarborador a{
+	text-align: center;
+	display: block;
+	text-align: center;	
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+ .colarborador {
+	width: 25%;
+	float: left;
+	padding:10px 10px;
+}
+#tipo {
+	background: rgba(255,255,255,0.5);
+}
+
+@media screen and (max-width: 1000px){
+
+
+.nav  {
+margin-right: 45px;
+font-size: 12px;
+			
+}
+}

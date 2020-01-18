@@ -1,0 +1,100 @@
+body {
+  background-color: black;
+  margin: 0 auto;
+  position: relative;
+}
+
+img{
+width: 100%;
+height: 120%;
+}
+.Proyecto .Texto{
+text-align: center;
+bottom: 0;
+height: 10%;
+width: 100%;
+}
+.Proyecto .Texto h2{
+background: white;
+position: relative;
+margin-top: -30px;
+background: rgba(0,0,0,0.3);
+}
+
+#tipo1  .Proyecto .Texto h2{ border-bottom:  4px solid red;}
+.main{
+
+	margin: auto;
+	width: 70%;	
+	height: 60%;
+
+}
+
+.tipo1,.tipo2,.tipo3,.tipo4,.tipo5{
+
+	width: 18%;
+	float: left;
+	margin: 0px 0px 10px 10px;
+
+
+}
+.tipo1 p ,.tipo2 p ,.tipo3 p,.tipo4 p ,.tipo5 p {
+
+	font-size: 15px;
+	margin-top: 0.5px;
+	
+
+}
+.examples
+{
+	width: 100%;
+	position: relative;
+
+}
+.Proyecto .Texto{
+text-align: center;
+bottom: 0;
+height: 10%;
+width: 100%;
+
+}
+.Proyecto .Texto h2{
+position: relative;
+margin-top: -40px;
+background: rgba(0,0,0,0.3);
+	
+}
+
+ img{
+ 	width:100%;
+	max-height:180px; 
+	opacity: 0.8;
+}
+h1{text-align: center;}
+
+.Proyecto:hover .imagen{
+transform: scale(1.01);	
+trasition: all 0.5s;
+
+}
+
+.Proyecto:hover .Texto{
+	color: black;
+	background: rgba(255,255,255,0.5);
+
+}
+#tipo1 .Proyecto .Texto h2{border-bottom:  4px solid red;}
+#tipo2 .Proyecto .Texto h2{border-bottom:  4px solid red;}
+#tipo3 .Proyecto .Texto h2{border-bottom:  4px solid red;}
+#tipo4 .Proyecto .Texto h2{border-bottom:  4px solid red;}
+#tipo5 .Proyecto .Texto h2{border-bottom:  4px solid red;}
+.Proyecto a{
+	padding: 3% 6%;
+	position: fixed;
+	z-index: 1;
+}
+
+@media screen and (max-width: 900px){
+.proyecto img{max-height: 100px;}
+}
+

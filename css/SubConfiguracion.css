@@ -1,0 +1,260 @@
+
+*{
+	padding:0px;
+	margin:0px;
+	
+}
+#particles-js {
+	width:100%;
+	height:100%;
+	position:fixed;
+	
+}
+header{
+	width: 90%;
+	margin: auto;
+}
+header img{
+	width: 60px;
+	height: 60px;
+}
+header .Usuario{float: left;}
+
+header .menu img{
+	width: 30px;
+	height: 30px;
+}
+
+header .menu {
+	
+	margin: 4% 0% 5% 85%;
+	
+
+}
+.main img ,.main a {
+	
+	margin: 0% auto;
+	display: block;
+	text-align: center;
+}
+header .Menu a{
+	text-align: center;
+	padding: 5px 5px;
+	border: 2px solid white;
+	width: 180px;
+	border-radius: 15px;
+	text-decoration: none;
+	color: black;
+	margin: 10px 0px 0px 0px;	
+	color: white;
+	
+}
+textarea{
+	display: block;
+	margin: auto;
+	height: 20%;
+}
+.botones
+{
+
+	margin: -3% 0% 0% 85%;
+	background-image:white;
+	position: absolute;
+	min-width: 20px;
+	min-height: 20px;
+	
+}
+.Menu
+{
+	opacity: 0.0;
+}
+.botones img
+{
+	width: 25px; 
+	height: 25px;
+}
+h6
+{
+text-align: center;	
+font-size: 20px;
+margin-bottom: 20px;
+}
+body{
+color: white;
+		font-family: 'arial';
+	background-image: linear-gradient(to right top, #242427, #1d1d21, #16171c, #0f0f17, #030311);
+	position: relative
+}
+
+.centrar
+{
+	width: 80%;
+	margin: auto;	
+}
+.centrar input
+{
+	width: 72%;
+		
+}
+
+.Proyecto input
+{
+	width: 51%;
+		
+}
+.Contenedor{
+	margin: auto;
+	height: 1000px;
+
+}
+.main{
+	margin: auto;
+	width: 100%;
+	min-width: 400px;
+	height: 65%;
+	
+}
+
+.main p{
+	margin:10px 0px 0px 2px;
+	float: left;	
+
+}
+.main input,.main select
+{
+	margin:0px auto 0px;
+	display: block;
+	width: 100%;
+	height: 25px;	
+
+}
+
+.main a{
+	display: block;
+	margin:5px 50px;
+	color: white;
+
+
+}
+
+.Boton {
+	margin:0% 0% 0% 70%;
+}
+.Editar {
+	margin:0% 0% 10% 50%;
+	padding: 5px 0px;
+}
+.main .imagen img{
+	width: 150px;
+	height: 150px;
+	margin-bottom: 10px;
+}
+
+.main .mas a,.main .eliminar a{
+	text-align: center;
+	padding: 10px 10px;
+	border: 2px solid white;
+	width: 180px;
+	border-radius: 15px;
+	text-decoration: none;	
+	margin: 10px auto;
+	text-align: center;
+	display: block;
+}
+
+.main{
+	
+	display:flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.contenido{
+	width: 500px;
+	height:300px;
+
+}
+textarea{
+	width: 100%;
+	height: 40%;
+
+
+}
+/*
+@media screen and (max-height : 600px){
+
+.main{
+	margin: auto;
+	width: 30%;
+	min-width: 400px;
+	height: 37%;
+	border: 2px solid rgba(255,255,255,0.4);
+}
+.main .imagen img{
+	width: 60px;
+	height: 60px;
+	
+}
+.main .mas a,.main .eliminar a{
+	text-align: center;
+	padding: 0px 10px;
+	width: 180px;
+	border-radius: 15px;
+	text-decoration: none;	
+	margin: 10px auto;
+	text-align: center;
+	display: block;
+}
+
+}*/
+/*
+@media screen and (max-height : 500px){
+
+.main{
+	margin: auto;
+	width: 30%;
+	min-width: 400px;
+	height: 28%;
+	border: 2px solid rgba(255,255,255,0.4);
+	color: white;
+}
+.main .imagen img{
+	width: 60px;
+	height: 60px;
+.main .mas a,.main .eliminar a{
+	
+}
+	text-align: center;
+	padding: 0px 10px;
+	border: 2px solid white;
+	width: 180px;
+	border-radius: 15px;
+	text-decoration: none;	
+	margin: 10px auto;
+	text-align: center;
+	display: block;
+}
+.main p{
+	margin:5px 0px 0px 2px;
+	float: left;	
+
+}
+.main input,.main select
+{
+	margin:5px 10px 0px 10px;
+	
+
+}
+.main a{
+	display: block;
+	margin:5px 50px;
+	color: white;
+
+
+}
+}
+
+*/
+
+

@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title> Pagina Web 3.0</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/Formularios.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/iziToast.min.css">
+  </head>
+  <body>
+  <header>
+<div class="row ">
+<div class="botones"> 
+      <img src="../image/descarga2.PNG" id="minimizar">
+      <img src="../image/descarga1.PNG" id="fullscreen">
+      <img src="../image/descarga.PNG"  id="cerrar">
+  </div>
+</div>
+
+
+    
+  <nav>
+    <div class="nav-wrapper teal darken-1">
+      <div id="imagenprincipal">
+        <img src="../image/2.jpg" alt="" class="circle responsive-img">
+
+      </div>
+      <ul id="nav-mobile" class="right">
+       <li><a href="../View/login.html"  >Cerrar seccion</a></li>
+        <li><a href="../View/VentanaColaboradores.html"  id="VentanaActual">Colaboradores</a></li>
+        <li><a href="../View/VentanaCrearColaborador.html"  > Crear Colaborador</a></li>
+        
+          <li><a href="../View/Configuracion.html" >Configuracion</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" >Proyectos</a></li>
+      </ul>
+    </div>
+  </nav> 
+  </header>
+   
+  <div class="row " id="Formulario">
+    <div class="col l4 m3 s3"></div>
+    <div class="col l4 m6 s6 z-depth-5" class=""> 
+    <div class='imagen'>
+            <img id="imagen1" src="../image/1.jpg">
+
+        </div> 
+          <a class="waves-effect waves-light btn modal-trigger" id='Editar' href="#modal1">Editar Foto</a>
+      <form  >
+		     <label for="nombre">Nombre</label>
+        <div class="input-field " >
+			 
+          <input id="nombre" type="text" class="validate">
+       
+        </div>
+             <label for="precio">Precio</label>
+        <div class="input-field " >
+          <input id="precio" type="text" class="validate">
+     
+        </div>
+          <label for="email">Email</label>
+         <div class="input-field">
+          <input id="email" type="email" class="validate">
+        
+        </div>
+        <div class="input-field">
+          <input disabled value="TipodeColaborador" id="TipodeColaborador" type="text" class="validate">
+          <label for="disabled" id="tipo">Tipo</label>
+        </div>
+              <label for="Proyectos" id="ProyectoA">Proyectos asignados</label>
+              <ul  id="Proyecto">
+            </ul>
+       </form>
+       <a class="waves-effect waves-light btn" id='guardar' >Guadar</a>
+       <a class="waves-effect waves-light btn" id='eliminar'>Eliminar</a>
+     </div>
+   <div class="col l4 m3 s3">
+   <a class="waves-effect waves-light btn" id='guardaranotacion' >Guardar anotacion</a>
+     <textarea id='textoanotacion'>
+      
+     </textarea>
+   </div>
+
+
+     </div>
+
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+<div class="modal-content">
+ <div class='imagen'>
+            <img id="imagen2" src="../image/1.jpg">
+
+        </div> 
+  <form action="#">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input id='file' accept='image/*' onchange= 'openFile(event)' type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+  </form>
+        
+</div>
+<div class="modal-footer">
+<a href="#!" id='Editar2' class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+</div>
+</div>
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/jquery-latest.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+      <script src="../js/iziToast.min.js"></script>
+    <script src="../js/ventanaColaborador.js"></script>
+
+        
+
+
+  <ul id="dropdown1" class="dropdown-content">
+      
+        <li><a href="../View/ProyectosFinalizados.html" >finalizados</a></li>
+         <li><a href="../View/ProyectosNoCulminados.html" > No culminados</a></li>
+          <li><a href="../View/ProyectosRetrasados.html" >Retrasados</a></li>
+         <li><a href="../index.html" > Activos</a></li>
+         <li><a href="../View/VentanaNuevoProyecto.html" >Crear Proyecto</a></li>
+        
+</ul>   
+<script>
+/*
+document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('.modal');
+var instances = M.Modal.init(elems, options);
+});*/
+// Or with jQuery
+$(document).ready(function(){
+$('.modal').modal();
+});
+$(".dropdown-trigger").dropdown();
+</script>
+<script >
+   // const comun = require('../js/comun.js')
+
+               
+  ipcRenderer = require('electron').ipcRenderer
+comun2 = require('../js/comun.js')
+
+String.prototype.format = comun2.formatString
+
+document.getElementById('minimizar').addEventListener("click", function(){ ipcRenderer.send('minimizar'); })
+document.getElementById('fullscreen').addEventListener("click", function(){ ipcRenderer.send('fullscreen'); })
+document.getElementById('cerrar').addEventListener("click", function(){ ipcRenderer.send('cerrar'); })
+
+/*
+  comun.proyectosCarga("SELECT title, ../image FROM project WHERE statusProject = 'Retrasado' or (NOW() > endDate) or (NOW() > endDateContent) or (NOW() > endDateWriter) or (NOW() > endDateAnnouncer) or (NOW() > endDateEditor)")
+  comun2.sql("SELECT * FROM logueado")
+    .then(result => 
+    {
+         
+      comun2.sql("SELECT ../image FROM admint WHERE admint = '"+result.rows[0].usuario+"'")
+        .then(result => 
+        {
+            $("#../imagenprincipal").attr('src',result.rows[0].../image)  
+        })
+      
+    })
+    .catch(function()
+    {
+      
+    })*/
+
+    </script>
+  </body>
+
+</html>

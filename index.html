@@ -1,0 +1,164 @@
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<title> Pagina Web 3.0</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="css/materialize.min.css">
+      <link rel="stylesheet" href="css/icon.css">
+    
+
+	</head>
+
+	<body>
+		<style>@font-face{src: url(flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2);}</style>
+  <header>
+<div class="row ">
+<div class="botones"> 
+      <img src="image/descarga2.PNG" id="minimizar">
+      <img src="image/descarga1.PNG" id="fullscreen">
+      <img src="image/descarga.PNG"  id="cerrar">
+  </div>
+</div>
+
+    
+  <nav>
+    <div class="nav-wrapper teal darken-1">
+      <div id="imagenprincipal">
+        <img src="image/2.jpg" alt="" class="circle responsive-img">
+
+      </div>
+
+      <ul id="nav-mobile" class="right">
+       <li><a href="View/login.html" class="esconder" >Cerrar seccion</a></li>
+       
+        <li><a href="View/VentanaColaboradores.html" >Colaboradores</a></li>
+        <li><a href="View/VentanaCrearColaborador.html"  > Crear Colaborador</a></li>
+          <li><a href="View/Configuracion.html" >Configuracion</a></li>
+
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" id="VentanaActual">Proyectos</a></li>
+      </ul>
+    </div>
+  </nav> 
+  </header>
+   <h3>Proyectos activos</h3>
+    <div class="row" id="ProyectosActivos">
+      <div class="col l1" >
+			  <ul id="slide-out" class="sidenav">
+					<li><div class="user-view">
+					  <div class="background">
+					   
+					  </div>
+					  <a href="#user"><img class="circle" src="image/2.jpg"></a>
+					  
+					</div></li>
+					
+				  </ul>
+					
+				  <a href="#" data-target="slide-out" class="sidenav-trigger teal darken-1" id="aqui"></a>
+      
+      </div>
+      <div class="col l2 m2 s12 container1" id="tipo1" >
+        <img src="image\SinAsignar.png"  class="ImagenCabezera"> 
+      </div>
+      <div class="col l2 m2 s12 container1" id="tipo2" >
+       <img src="image\Creador.png"  class="ImagenCabezera"> 
+      </div>
+      <div class="col l2 m2 s12 container1" id="tipo3" >
+        <img src="image\Escritor.png"  class="ImagenCabezera"> 
+      </div>
+      <div class="col l2 m2 s12 container1" id="tipo4" >
+        <img src="image\Locutor.png"  class="ImagenCabezera"> 
+      </div>
+      <div class="col l2 m2 s12 container1" id="tipo5"  >
+        <img src="image\Editor.png"  class="ImagenCabezera"> 
+      </div>
+      <div class="col l1"></div>
+
+    </div>
+
+
+
+<div id="ModalColaborador" class="modal open" tabindex="0" style="z-index: 2; display: none; opacity: 1; top: 30%; transform: scaleX(1) scaleY(1);">
+  <div class="modal-content">
+    <div class="form-group">
+		 <label for="input_text" id="FechaE" >Fecha de entrega</label>
+          <div class="input-field ">
+            <input id="FechaNuevoProyecto" type="date" class="validate">
+          </div>
+        </form>
+        <label for="Tipo">Colaborador</label>
+  
+          <div class="input-field">
+              <select id="Colaborador">
+              </select>
+    </div>
+    <button class="btn" id="guardar">Guardar</button>   
+    <button class="btn" id="cancelar">Cancelar</button>
+  </div>
+</div>
+
+    
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/proyectosActivos.js"></script> 
+
+
+  <ul id="dropdown1" class="dropdown-content">
+      
+        <li><a href="View/ProyectosFinalizados.html" >Finalizados</a></li>
+        <li><a href="index.html" > Activos</a></li>
+        <li><a href="View/VentanaNuevoProyecto.html" >Crear Proyecto</a></li>
+        
+</ul>   
+<script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    $('.modal').modal();
+    $('select').formSelect();
+    $(".dropdown-trigger").dropdown();
+  });
+</script>
+
+<script >
+      ipcRenderer = require('electron').ipcRenderer
+      comun2 = require('./js/comun.js')
+
+      String.prototype.format = comun2.formatString
+
+      document.getElementById('minimizar').addEventListener("click", function(){ ipcRenderer.send('minimizar'); })
+      document.getElementById('fullscreen').addEventListener("click", function(){ ipcRenderer.send('fullscreen'); })
+      document.getElementById('cerrar').addEventListener("click", function(){ ipcRenderer.send('cerrar'); })
+      $(document).on('ready', function()
+      {
+        comun2.sql("SELECT * FROM logueado")
+          .then(result => 
+          {
+            
+            comun2.sql("SELECT image FROM admint WHERE admint = '"+result.rows[0].usuario+"'")
+              .then(result => 
+              {
+                
+                if(result.rows.length>0)
+                {
+                  
+                  $("#imagenprincipal").attr('src',result.rows[0].image)  
+                }
+                else
+                {
+                  $("#imagenprincipal").attr('src',comun2.defaultImage)
+                }
+              })
+            
+          })
+          .catch(function()
+          {
+            
+          })
+      })
+
+    </script>
+	</body>
+
+</html>

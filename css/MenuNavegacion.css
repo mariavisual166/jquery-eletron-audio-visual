@@ -1,0 +1,131 @@
+	* {
+		margin:0px;
+		padding:0px;
+	}
+/* Hide the toggle checkbox */
+#expand-toggle {
+  display: none;
+}
+
+/* Hide expandable content by default */
+.expandable {
+  visibility: collapse;
+  background: #ddd;
+}
+
+/* Style the button */
+#expand-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 15px 15px;
+  background:rgba(255,255,255,1);
+ color: black;
+  border-radius: 3px;
+}
+
+/* Show hidden content when the checkbox is checked */
+
+
+#expand-toggle {
+  display: none;
+}		
+#header{
+	margin:auto;
+	width:80%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+			
+			.nav ul,.nav  ol {
+				list-style:none;
+				background: white;
+				 color: black;
+			 
+			}
+			
+			.nav > li {
+	 z-index: 1;
+	 list-style: none;
+				
+			}
+			.nav  {
+			 z-index: 1;
+			
+			}
+			.nav li a {
+				 color: black;
+				
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background: rgba(190,190,190,0.5);
+			
+			}
+			
+			.nav li ul {
+				margin-top: -10px;
+				display:none;
+				position:absolute;
+				min-width:210px;
+			
+
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+	
+			}
+			
+			.nav li ul li {
+				position:relative;
+
+			}
+#expand-toggle:checked ~ .nav li > ul {
+display:block;
+
+
+}
+.borde a{
+	color: black;
+	background: white;
+
+}	
+a{
+	display: block;
+	color: black;
+
+
+}
+#menu{
+	-webkit-app-region:no-drag;
+	border: 2px solid white;
+	text-decoration:none;
+	font-size: 20px;
+
+}	
+
+#Menu a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 10px;
+	font-size: 25px;
+
+}	
+#Menu a:hover{
+	text-decoration: none;
+	background: rgba(100,100,100,0.5);
+
+}	
+
+@media screen and (max-width: 1000px){
+
+
+.nav  {
+margin-right: 45px;
+
+			
+}
+}

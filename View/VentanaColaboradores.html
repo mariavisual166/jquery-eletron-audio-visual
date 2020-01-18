@@ -1,0 +1,90 @@
+<html>
+	<head>
+	<title>Colaboradores</title>
+			<link rel="stylesheet" type="text/css" href="../style.css">
+			<link rel="stylesheet" href="../css/materialize.min.css">
+			<link rel="stylesheet" href="../css/iziToast.min.css">
+			<link rel="stylesheet" href="../css/VentanaColaboradores.css"> 
+			
+	</head>
+	
+	<body>
+	<header>
+<div class="row ">
+<div class="botones"> 
+      <img src="../image/descarga2.PNG" id="minimizar">
+      <img src="../image/descarga1.PNG" id="fullscreen">
+      <img src="../image/descarga.PNG"  id="cerrar">
+  </div>
+</div>
+
+
+    
+  <nav>
+    <div class="nav-wrapper teal darken-1">
+      <div id="imagenprincipal">
+        <img src="../image/2.jpg" alt="" class="circle responsive-img">
+
+      </div>
+      <ul id="nav-mobile " class="right teal darken-1">
+       <li><a href="../View/login.html" >Cerrar seccion</a></li>
+        <li><a href="../View/VentanaColaboradores.html" id="VentanaActual">Colaboradores</a></li>
+        <li><a href="../View/VentanaCrearColaborador.html"  > Crear Colaborador</a></li>
+          <li><a href="../View/Configuracion.html" >Configuracion</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" >Proyectos</a></li>
+      </ul>
+    </div>
+  </nav> 
+  </header>
+		
+	<div class="Contenedor">
+		<div id="mas" class="main">
+			<h3>Colaboradores</h3>
+			<div class="Navegacion">
+				<div  class="form-group">
+					    <select onchange="cambiar(this.selectedIndex)" class="form-control" id="tipo" placeholder="Ordenar">
+                          <option value="Todos">Todos</option>
+                          <option value="Escritor">Escritor</option>
+					      <option value="Locutor">Locutor</option>
+					      <option value="Creador de contenido">Creador de contenido</option>
+					      <option value="Editor">Editor</option>
+					    </select>
+
+					   <!--   <textarea class="form-control" ng-model="comment" name="comment" onkeypress='pulsar(event)'></textarea>-->
+                        <input type="text"  id='buscar' onkeypress='pulsar(event)' placeholder="Buscar">
+                     <!--  <button type="button" id='buscar' class="form-group">Buscar</button>-->
+						
+						
+						
+				</div>
+			 </div>	
+		</div>
+	
+	</div>
+	
+  <ul id="dropdown1" class="dropdown-content">
+      
+        <li><a href="../View/Finalizados.html" >finalizados</a></li>
+         <li><a href="../index.html" > Activos</a></li>
+         <li><a href="../View/VentanaNuevoProyecto.html" >Crear Proyecto</a></li>
+        
+</ul>  
+	<script src="../js/iziToast.min.js"></script>
+	<script src="../js/jquery-3.3.1.min.js"></script>	
+	<script src="../js/jquery-latest.js"></script>
+    <script src="../js/materialize.min.js"></script>
+	
+	<script src="../js/ventanacolaboradores.js"></script>	
+	
+	<script src="../js/windowsControl.js"></script>
+	 <script >
+
+
+$(".dropdown-trigger").dropdown();
+
+	 </script>
+	</body>
+	
+	
+
+</html>

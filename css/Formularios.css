@@ -1,0 +1,77 @@
+#guardar,#eliminar{
+width: 100%;
+margin-bottom: 20px;
+}
+#Formulario{
+margin-top: 40px;
+}
+#ProyectoA,#tipo,,#FechaE{
+font-size: 15px;
+}
+#Proyecto li{color: grey;opacity: 0.7;}
+#imagen,#imagen1,#imagen2,.ImagenProyecto{
+width: 150px;
+height: 150px;
+border-radius: 75px; 
+display: block;
+margin: 5px auto 5px;
+}
+#Editar{
+margin: auto;
+display: block;
+width: 30%;
+
+}
+#Color{
+
+	font-size: 15px;
+	margin-top: 5px;
+}
+#guardaranotacion{
+width:200px;
+margin: auto;
+margin-bottom: 5px;
+display: block;
+}
+.Centrar{
+width: 100%;
+}
+#textoanotacion{
+height: 750px;
+}
+.Boton #guardar_proyecto,.Boton #eliminar_proyecto,.Boton #archivo,.Boton #imagenes{
+
+width: 49%;
+margin-top: 5px;
+
+}
+.Boton #archivo,.Boton #imagenes{
+
+
+margin-bottom: 10px;
+
+}
+
+#checkbox{margin-bottom: 15px;}
+.BotonNuevo{
+
+width: 210px;
+display: block;
+margin: auto;
+margin-bottom: 5px;
+}
+select{background: #e2e9f4;margin-bottom: 20px;}
+textarea{
+
+background: rgba(255,255,255,0.5);
+border-radius: 20px;	
+
+}
+#Colaboradores{
+	width: 98.5%;
+	margin-bottom: 10px;
+}
+.carousel {margin-top: -80px;}
+.imagen #Editar{margin-top: -130px;}
+#Fecha{color: grey;
+font-size: 15px;}

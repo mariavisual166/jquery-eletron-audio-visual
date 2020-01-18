@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title> Pagina Web 3.0</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" href="../css/materialize.min.css">
+    <link rel="stylesheet" href="../css/Formularios.css">
+    <link rel="stylesheet" type="text/css" href="../css/MenuProyecto.css">
+    <link rel="stylesheet" href="../css/icon.css">
+  </head>
+  <body>
+  <header>
+<div class="row ">
+<div class="botones"> 
+      <img src="../image/descarga2.PNG" id="minimizar">
+      <img src="../image/descarga1.PNG" id="fullscreen">
+      <img src="../image/descarga.PNG"  id="cerrar">
+  </div>
+</div>
+
+
+    
+  <nav>
+    <div class="nav-wrapper teal darken-1">
+      <div id="imagenprincipal">
+        <img src="../image/2.jpg" alt="" class="circle responsive-img">
+
+      </div>
+      <ul id="nav-mobile" class="right">
+       <li><a href="../View/login.html"  >Cerrar seccion</a></li>
+        <li><a href="../View/VentanaColaboradores.html" >Colaboradores</a></li>
+        <li><a href="../View/VentanaCrearColaborador.html"  > Crear Colaborador</a></li>
+          <li><a href="../View/Configuracion.html" id="VentanaActual" >Configuracion</a></li>
+          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" >Proyectos</a></li>
+      </ul>
+    </div>
+  </nav> 
+  </header>
+   
+  <div class="centar">
+    <div class="main">
+    <a id="boton" class="teal darken-1 modal-trigger" href="#exampleModalCenter">Cambiar clave</a>
+    <a  id="boton" class="teal darken-1 modal-trigger"  href="#ModalCambioImagen">Cambiar imagen</a>
+    <a id="boton"  class="teal darken-1 modal-trigger" href="#ModalCambioUsuario">Cambiar nombre</a>
+    <a id="boton"  class="teal darken-1 modal-trigger" href="#ModalCambioCorreo">Cambiar correo</a>
+    </div>  
+  </div>  
+<div id="exampleModalCenter"class="modal">
+<div class="modal-content">
+
+  <form action="#">
+    <div class="file-field input-field">
+  
+     <div class="input-field ">
+             <input type="password" class="form-control" id="claveAnterior">
+            <label for="input_text">Clave anterior</label>
+          </div>
+        <div class="input-field ">
+             <input type="password" class="form-control" id="claveNueva">
+            <label for="input_text">Nueva clave</label>
+          </div>
+           
+    </div>
+  </form>
+          <a class="waves-effect waves-light btn"  >Guardar</a>
+</div>
+</div>
+<div id="ModalCambioImagen"class="modal">
+<div class="modal-content">
+ <div class='imagen'>
+            <img id="imagen" src="../image/1.jpg">
+
+        </div> 
+  <form action="#">
+    <div class="file-field input-field">
+      
+    
+        <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file" id="nuevaImagen">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+    </div>
+  </form>
+          <a class="waves-effect waves-light btn"  >Guardar</a>
+</div>
+</div>
+<div id="ModalCambioUsuario"class="modal">
+<div class="modal-content">
+  
+  <form action="#">
+    <div class="file-field input-field">
+    <div class="input-field ">
+             <input type="text" class="form-control" id="nuevoUsuario">
+            <label for="input_text">Nombre</label>
+          </div>
+  
+    </div>
+  </form>
+          <a class="waves-effect waves-light btn"  >Guardar</a>
+</div>
+</div>
+<div id="ModalCambioCorreo" class="modal">
+<div class="modal-content">
+
+  <form action="#">
+ <div class="input-field ">
+             <input type="email" class="form-control" id="nuevoUsuario">
+            <label for="input_text">Correo electronico</label>
+          </div>
+
+  </form>
+          <a class="waves-effect waves-light btn"  >Guardar</a>
+</div>
+</div>
+    
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/jquery-latest.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+<script src="../js/configuracion.js"></script>
+   <script src="../js/windowsControl.js"></script>
+
+
+        
+
+  
+  <ul id="dropdown1" class="dropdown-content">
+      
+        <li><a href="../View/ProyectosFinalizados.html" >finalizados</a></li>
+         <li><a href="../index.html" > Activos</a></li>
+         <li><a href="../View/VentanaNuevoProyecto.html" >Crear Proyecto</a></li>
+        
+</ul>   
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var options = document.querySelectorAll('option');
+    var instances = M.Carousel.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+
+$(document).ready(function() {
+    $('input#input_text, textarea#textarea2').characterCounter();
+  });
+document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('.modal');
+var options = document.querySelectorAll('option');
+var instances = M.Modal.init(elems, options);
+});
+// Or with jQuery
+$(document).ready(function(){
+$('.modal').modal();
+});
+$(".dropdown-trigger").dropdown();
+</script>
+<script >
+
+  ipcRenderer = require('electron').ipcRenderer
+comun2 = require('../js/comun.js')
+
+String.prototype.format = comun2.formatString
+
+document.getElementById('minimizar').addEventListener("click", function(){ ipcRenderer.send('minimizar'); })
+document.getElementById('fullscreen').addEventListener("click", function(){ ipcRenderer.send('fullscreen'); })
+document.getElementById('cerrar').addEventListener("click", function(){ ipcRenderer.send('cerrar'); })
+
+
+
+    </script>
+  </body>
+
+</html>
