@@ -3,15 +3,12 @@
 	margin: auto;
 	height: 1000px;
 
-
 }
 .main{
 
 	margin: 70px auto;
 	width: 70%;
-
 	position: relative;
-
 
 }
 
@@ -58,16 +55,10 @@ min-width: 400px;
 	font-size: 30px;
 	color: white;
 
-
-
-
 }
 
-#boton:hover{
-	background: rgba(255,255,255,0.8);
+#boton:hover{background: rgba(255,255,255,0.8);}
 
-
-}
 .contenedor{
 width: 100%;
 height: 45px;
@@ -78,23 +69,18 @@ font-size: 30px;
 
 .main .Boton1 a {
 	padding: 28%  0 0 100%;
-
-margin-top: -130px
+	margin-top: -130px
 }
-.main .Boton a {
-	;
-	padding: 18% 100% 9% 100%;
 
-}
+.main .Boton a {padding: 18% 100% 9% 100%;}
 
 .main .Boton2 a {
 	padding: 15% 50% 0% 50%;
 	position: relative;
-	
 }
-.modal-title,label{
-	color:black;
-}	
+
+.modal-title,label{color:black;}
+
 .imagen img{
 	width: 180px;
 	height: 180px;
@@ -112,22 +98,5 @@ margin-top: -130px
 	-ms-transition: all .2s ease;
 	-o-transition: all .2s ease;
 	transition: all .2s ease;
-
-	
 }
 
-
-
-
-
-
-/
-@media screen and (max-width: 1500px){
-
-body{
-
-	background: red;
-
-}
-
-}

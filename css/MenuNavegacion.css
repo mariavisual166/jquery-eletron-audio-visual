@@ -82,6 +82,7 @@
 				position:relative;
 
 			}
+			
 #expand-toggle:checked ~ .nav li > ul {
 display:block;
 
@@ -96,14 +97,12 @@ a{
 	display: block;
 	color: black;
 
-
 }
 #menu{
 	-webkit-app-region:no-drag;
 	border: 2px solid white;
 	text-decoration:none;
 	font-size: 20px;
-
 }	
 
 #Menu a{
@@ -112,20 +111,15 @@ a{
 	text-align: center;
 	padding: 10px;
 	font-size: 25px;
-
 }	
+
 #Menu a:hover{
 	text-decoration: none;
 	background: rgba(100,100,100,0.5);
-
 }	
 
 @media screen and (max-width: 1000px){
 
+.nav  { margin-right: 45px;}
 
-.nav  {
-margin-right: 45px;
-
-			
-}
 }
