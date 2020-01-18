@@ -95,10 +95,8 @@ function handleSquirrelEvent(application) {
     if (process.argv.length === 1) {
         return false;
     }
-
     const ChildProcess = require('child_process');
     const path = require('path');
-
     const appFolder = path.resolve(process.execPath, '..');
     const rootAtomFolder = path.resolve(appFolder, '..');
     const updateDotExe = path.resolve(path.join(rootAtomFolder, 'Update.exe'));
@@ -128,17 +126,14 @@ function handleSquirrelEvent(application) {
             // - Add your .exe to the PATH
             // - Write to the registry for things like file associations and
             //   explorer context menus
-
             // Install desktop and start menu shortcuts
             spawnUpdate(['--createShortcut', exeName]);
-
             setTimeout(application.quit, 1000);
             return true;
 
         case '--squirrel-uninstall':
             // Undo anything you did in the --squirrel-install and
             // --squirrel-updated handlers
-
             // Remove desktop and start menu shortcuts
             spawnUpdate(['--removeShortcut', exeName]);
 
