@@ -18,7 +18,6 @@ CREATE TABLE IF NOT EXISTS project(
 	endDate DATE DEFAULT '2200-12-31',
 	image text,
 	anotacion text DEFAULT NULL,
-	
 	contentCreator text DEFAULT NULL,
 	endDateContent DATE DEFAULT '2200-12-31',
 	writer text DEFAULT NULL,
@@ -32,7 +31,6 @@ CREATE TABLE IF NOT EXISTS project(
 	statusAnnouncer VARCHAR(20)DEFAULT 'No asignado',
 	statusEditor VARCHAR(20) DEFAULT 'No asignado',
 	statusProject VARCHAR(20) DEFAULT 'No asignado',
-	
 	PRIMARY KEY (id,title),
 	FOREIGN KEY (contentCreator) REFERENCES collaborator(userName) ON UPDATE CASCADE,
 	FOREIGN KEY (writer) REFERENCES collaborator(userName) ON UPDATE CASCADE,
@@ -69,6 +67,7 @@ CREATE TABLE IF NOT EXISTS admint(
 	image text ,
 	PRIMARY KEY (admint)
 );
+
 CREATE TABLE IF NOT EXISTS logueado(usuario text);
 CREATE TABLE IF NOT EXISTS colaboradorVisualizado(colaborador text);
 CREATE TABLE IF NOT EXISTS proyectoVisualizado(proyecto text);
